@@ -1,3 +1,81 @@
 * {
   box-sizing: border-box;
 }
+
+/* General Styles */
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+  color: #fc5185;
+}
+
+h2 {
+  font-family: "Arvo", serif;
+  color: #3fc1c9;
+}
+h3 {
+  font-family: "Zen Dots", cursive;
+  color: #ffc2b4;
+}
+nav {
+  background-color: hotpink;
+  display: flex;
+  justify-content: center;
+  background-color: #213042a1;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #364f6b;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+a:hover {
+  color: rgb(250, 207, 87);
+}
+
+/* Header Styles */
+.headline1 {
+  display: flex;
+  justify-content: center;
+}
+/* Navigation Style */
+.navbar-items li {
+  list-style-type: none;
+  display: inline-block;
+}
+.navbar-item {
+  color: orange;
+  font-size: 1.2rem;
+  padding-right: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Main Style */
+.profile-pic {
+  width: 200px;
+  border-radius: 50px;
+}
+
+.skill-tags {
+  list-style-type: none;
+  padding-right: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.github-logo {
+  width: 100px;
+}
+
+.codepen-logo {
+  width: 100px;
+}
+
+.linkedin-logo {
+  width: 100px;
+}
+/* Footer Style */
