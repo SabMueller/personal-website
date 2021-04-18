@@ -14,13 +14,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Sabrina Mueller</title>
+    <title>Personal Website of Sabrina Mueller</title>
   </head>
   <body>
-    <header>
-      <div class="headline1">
-        <h1>-> Sabrina Müller <-</h1>
-      </div>
+    <header class="header-container">
+      <img
+        src="./images/profilepic.JPG"
+        alt="profile picture of Sabrina Mueller"
+        class="profile-pic"
+      />
+      <h1 class="headline-item">Sabrina Müller</h1>
       <nav class="navbar">
         <ul class="navbar-items">
           <li>
@@ -33,124 +36,126 @@
       </nav>
     </header>
     <main>
-      <section>
-        <img
-          class="profile-pic"
-          src="./images/profilepic.JPG"
-          alt="profile pic of sabrina mueller"
-        />
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skill-tags">
-          <li class="skill-tag">Teamwork</li>
-          <li class="skill-tag">Problem solving</li>
-          <li class="skill-tag">Creativity</li>
-          <li class="skill-tag">Resilience</li>
-          <li class="skill-tag">Independence</li>
-        </ul>
-      </section>
-      <section id="hobbies & Interests">
-        <h2>Hobbies & Interests</h2>
-        <ul>
-          <li>cooking</li>
-          <li>traveling</li>
-          <li>animals</li>
-          <li>video gaming</li>
-          <li>hiking</li>
-        </ul>
-      </section>
+      <div class="skills-interests-container">
+        <section id="skills" class="tags-container">
+          <h2>Skills</h2>
+          <ul class="tags">
+            <li>Problem-solving</li>
+            <li>Creativity</li>
+            <li>Resilience</li>
+            <li>Independence</li>
+          </ul>
+        </section>
+        <section id="interests" class="tags-container">
+          <h2>Interests</h2>
+          <ul class="tags">
+            <li>Cooking</li>
+            <li>Traveling</li>
+            <li>Animal Rights</li>
+            <li>Video-gaming</li>
+          </ul>
+        </section>
+      </div>
+      <div class="contact-container">
       <section id="contact-info">
         <h2>Contact Information</h2>
-        <h3>E-Mail</h3>
-        <p>sabrina@fakeemail.de</p>
-        <h3>Mobile</h3>
-        <p>+49 (0)100 000 000 01</p>
-      </section>
-      <section id="socials">
-        <a href="https://github.com/SabMueller" target="_blank"
-          ><img
-            class="github-logo"
-            src="./images/githublogo.png"
-            alt="github logo"
-        /></a>
-        <a href="https://codepen.io/sabmueller" target="_blank"
-          ><img
-            class="codepen-logo"
-            src="./images/codepenlogo.png"
-            alt="codepen logo"
-        /></a>
-        <a href="https://www.linkedin.com/" target="_blank"
-          ><img
-            class="linkedin-logo"
-            src="./images/linkedinlogo.png"
-            alt="linkedin logo"
-        /></a>
-      </section>
-      <section id="biography">
-        <h2>Biography</h2>
-        <p>
-          Hi everyone! I am Sabrina, I am 32 years old and I'm from the southern
-          part of Bavaria / Germany. I am a positive, open-minded person who
-          loves good company and pizza! 🍕
-        </p>
-        <p>
-          At the momemt I am participating in a bootcamp by neuefische to become
-          a web developer and being able to work in IT!
-        </p>
-        <p>
-          If you want to get to know more about me, check out my
-          <a href="#CV">CV</a> and <a href="#hobbies-interests">hobbies</a>! To
-          get in touch with me you can find my contact info
-          <a href="#contact-info">here</a> or find my socials
-          <a href="#socials">here</a>!
-        </p>
-      </section>
-      <section id="CV">
-        <h2>Corriculum Vitae</h2>
-        <h3>Work Experience</h3>
-        <span>since Apr 2021</span>
-        <span>Web Development Trainee</span>
-        <span>neuefische</span> <br />
-        <span>Oct 2020 - Mar 2021</span>
-        <span>HR specialist</span>
-        <span>regional Mail Company</span> <br />
-        <span>Oct 2020 - Jan 2021</span>
-        <span>Business Owner</span>
-        <span>My Own Facility Management Company</span> <br />
-        <span> May 2014 - Nov 2016</span>
-        <span>HR specialist</span>
-        <span>regional Hospitality Company</span>
-        <h3>Education</h3>
-        <span>since Oct 2020</span>
-        <span>BSc IT Management</span>
-        <span>German University</span> <br />
-        <span>Sep 2010 - Mar 2014</span>BBA Hospitality Management<span>
-          American/Swiss University</span
-        >
-        <br />
-        <span>Jun 2009</span>Abitur<span>Hometown School</span>
-      </section>
-      <section>
-        <h3>Languages</h3>
-        <ul>
-          <li>German</li>
-          <li>English</li>
-          <li>French</li>
-          <li>Spanish</li>
-        </ul>
-        <h3>Coding Languages</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </section>
+          <div class="email">
+            <h3>E-Mail</h3>
+            <a href="mailto:sabrina@fakemail.com">
+              <img
+                src="./images/email.png"
+                alt="E-Mail Icon"
+                class="email-icon"
+              />
+            </a>
+            <p>sabrina@fakeemail.de</p>
+          </div>
+          <div class="mobile">
+            <h3>Mobile</h3>
+            <a href="tel:1234567"><img src="./images/phone.png" alt="Phone Icon" class="phone-icon" /></a>
+            <p>+49 (0)100 000 001</p>
+          </div>
+          <div class="social-container">
+          <h3 class="social-header"> Socials</h3>
+          <a href="https://github.com/SabMueller" target="_blank" class="github-link"
+            ><img
+              class="github-logo"
+              src="./images/githublogo.png"
+              alt="github logo"
+          /></a>
+          <a href="https://codepen.io/sabmueller" target="_blank" class="codepen-link"
+            ><img
+              class="codepen-logo"
+              src="./images/codepenlogo.png"
+              alt="codepen logo"
+          /></a>
+          <a href="https://www.linkedin.com/" target="_blank" class="linkedin-link"
+            ><img
+              class="linkedin-logo"
+              src="./images/linkedinlogo.png"
+              alt="linkedin logo"
+          /></a>
+          </section>
+          </div>
+      <div class="biography-container">
+        <section id="biography">
+          <h2>Biography</h2>
+          <img src="./images/aboutme.png" alt="Images that says A Little Bit About Me..." class="about-me">
+          <p class="biography-paragraph">
+            Hi everyone! I am Sabrina, I am 32 years old and I'm from the southern
+            part of Bavaria / Germany. I am a positive, open-minded person who
+            loves good company and pizza! 🍕
+          </p>
+          <p class="biography-paragraph">
+            At the momemt I am participating in a bootcamp by neuefische to become
+            a web developer and being able to work in IT!
+          </p>
+          <p class="biography-paragraph">
+            If you want to get to know more about me, check out my
+            <a href="#CV">CV</a>, <a href="#skills">skills</a> & <a href="#interests">interests</a>! To
+            get in touch with me you can find my contact info
+            <a href="#contact-info">here</a>. 
+          </p>
+        </section>
+      </div>
+        <section id="CV" class="cv-grid">
+          <h2 class="cv-headline">Corriculum Vitae</h2>
+          <h3 class="cv-date">Date</h3>
+          <h3 class="cv-position">Position</h3>
+          <h3 class="cv-organization">Organization / University</h3>
+          <p class="cv-date-item">since Apr 2021 </p>
+          <p class="cv-position-item">Web Development Trainee </p>
+          <p class="cv-organization-item">neuefische</p>
+          <p class="cv-date-item">Oct 2020 - Mar 2021</p>
+          <p class="cv-position-item">HR-specialist </p>
+          <p class="cv-organization-item">regional Mail Company </p>
+          <p class="cv-date-item">Jan 2017 - Sept 2020</p>
+          <p class="cv-position-item">Business Owner</p>
+          <p class="cv-organization-item">My Own Company</p>
+          <p class="cv-date-item">May 2014 - Nov 2016</p>
+          <p class="cv-position-item">HR-specialst</p>
+          <p class="cv-organization-item">regional FM-Company</p>
+          <p class="cv-date-item">since Oct 2020</p>
+          <p class="cv-position-item">BSc IT-Management</p>
+          <p class="cv-organization-item">German University</p>
+          <p class="cv-date-item">Sep 2010 - Mar 2014</p>
+          <p class="cv-position-item">BBA Hospitality Management</p>
+          <p class="cv-organization-item">American / Swiss University</p>
+        </section>
+        <section class="languages-grid">
+          <h3 class="language-headline">Coding - Languages</h3>
+          <p class="language">HTML</p>
+          <p class="skill-level">Basic</p>
+          <p class="language">CSS</p>
+          <p class="skill-level">Basic</p>
+          <p class="language">JavaScript</p>
+          <p class="skill-level">Basic</p>
+        </section>
     </main>
     <footer>
-      <ul>
-        <il>Imprint</il>
-        <il>Copyright 2021</il>
+      <ul class="footer-nav-container">
+        <il class="footer-nav-item"><a href="#top">Home</a></il>
+        <il class="footer-nav-item">Copyright ©2021</il>
       </ul>
     </footer>
   </body>

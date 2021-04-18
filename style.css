@@ -17,18 +17,13 @@ h3 {
   font-family: "Zen Dots", cursive;
   color: #ffc2b4;
 }
-nav {
-  background-color: hotpink;
-  display: flex;
-  justify-content: center;
-  background-color: #213042a1;
-}
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #364f6b;
   color: #f5f5f5;
   margin: 0;
+  line-height: 1.5;
 }
 
 a:hover {
@@ -36,11 +31,38 @@ a:hover {
 }
 
 /* Header Styles */
-.headline1 {
-  display: flex;
-  justify-content: center;
+.header-container {
+  display: grid;
+  grid-template-columns: 0.5rem 12.5rem 2rem 1fr;
+  grid-template-rows: 0.5rem 0.5fr 0.2fr;
+  background: rgb(16, 20, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 20, 32, 0.8953782196472339) 0%,
+    rgba(14, 30, 41, 0.8617647742690826) 25%,
+    rgba(14, 30, 41, 0.5508404045211834) 100%
+  );
 }
+
+.profile-pic {
+  width: 200px;
+  border-radius: 30%;
+  grid-column: 2;
+  grid-row: 2 / 4;
+}
+.headline-item {
+  grid-column: 4 / -1;
+  grid-row: 2;
+  align-self: center;
+}
+
 /* Navigation Style */
+.navbar {
+  grid-column: 4 / -1;
+  grid-row: 3;
+  align-self: flex-start;
+  xbackground-color: hotpink;
+}
 .navbar-items li {
   list-style-type: none;
   display: inline-block;
@@ -48,34 +70,233 @@ a:hover {
 .navbar-item {
   color: orange;
   font-size: 1.2rem;
-  padding-right: 50px;
+  padding-right: 3.125rem;
   text-decoration: none;
   font-weight: 600;
 }
 
 /* Main Style */
-.profile-pic {
-  width: 200px;
-  border-radius: 50px;
+
+/* Skills & interests Style */
+
+.skills-interests-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 2rem;
+  padding: 1rem;
+  gap: 2rem;
+}
+.tags-container h2 {
+  text-align: center;
 }
 
-.skill-tags {
+.tags-container {
+  background-color: brown;
+  border-radius: 1.875rem;
+  border: 0.125rem solid black;
+}
+
+.tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 65vw;
   list-style-type: none;
-  padding-right: 0;
-  margin: 0;
+  padding: 0 1rem;
+}
+
+.tags li {
+  background-color: coral;
+  padding: 0.313rem;
+  margin: 0.313rem;
+  border-radius: 1.25rem;
+  font-size: larger;
+}
+
+/* Contact Info & Socials Style */
+
+#contact-info h2 {
+  text-align: left;
+}
+.contact-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 5rem;
+  margin: 2rem 2rem;
+}
+
+.email {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 1rem;
+  border-radius: 10%;
+}
+
+.mobile {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.social-container {
+  display: inline-grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 10% 10%;
+  column-gap: 5%;
+}
+
+.social-header {
+  grid-column: 2 / -1;
+}
+.github-link {
+  grid-row: 2;
+  grid-column: 1 / 2;
+}
+.codepen-link {
+  grid-row: 2;
+  grid-column: 2 / 3;
+}
+
+.email-icon {
+  width: 6.25rem;
+}
+.phone-icon {
+  width: 6.25rem;
+}
+
+#socials {
+  text-align: left;
+}
+
+.socials {
+  display: inline-flex;
+  flex-flow: row wrap;
+}
+
+.socials h3 {
+  text-align: center;
 }
 
 .github-logo {
-  width: 100px;
+  width: 6.25rem;
+  align-self: auto;
 }
 
 .codepen-logo {
-  width: 100px;
+  width: 6.25rem;
 }
 
 .linkedin-logo {
-  width: 100px;
+  width: 6.25rem;
 }
+
+/* Biography Style */
+
+.biography-container {
+  padding: 0 2em;
+  text-align: right;
+  background-color: darkgoldenrod;
+}
+
+.about-me {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 2em;
+}
+
+/* CV Style */
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.25fr);
+  grid-auto-rows: 0.25fr;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 2rem 3rem;
+}
+
+.cv-headline {
+  grid-column: 1 / -1;
+}
+
+.cv-date {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.cv-position {
+  grid-column: 2 / 3;
+  grid-row: 2;
+  justify-self: start;
+}
+
+.cv-organization {
+  grid-column: 3 / 4;
+  grid-row: 2;
+  justify-self: start;
+}
+
+.cv-date-item {
+  grid-column: 1;
+  justify-self: start;
+}
+.cv-organization-item {
+  justify-self: start;
+}
+
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 0.25fr);
+  grid-auto-rows: 0.25fr;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 2rem 3rem;
+}
+
+.language-headline {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.language {
+  grid-column: 1;
+  grid-row-start: 2 / auto;
+  justify-self: start;
+}
+
+.skill-level {
+  grid-column: 2 / 3;
+  grid-row-start: 2 / auto;
+  justify-self: start;
+}
+
+.coding-languages {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Footer Style */
+
+footer {
+  background-color: darkgray;
+}
+
+.footer-nav-container {
+  display: flex;
+  justify-content: center;
+  background-color: darkgrey;
+}
+
+.footer-nav-container a {
+  text-decoration: none;
+}
+
+.footer-nav-item {
+  list-style-type: none;
+  padding-right: 2rem;
+}
