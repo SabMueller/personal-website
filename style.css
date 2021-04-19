@@ -6,28 +6,33 @@
 h1 {
   font-family: "Permanent Marker", cursive;
   font-size: 3rem;
-  color: #fc5185;
+  color: rgb(245, 139, 157);
 }
 
 h2 {
   font-family: "Arvo", serif;
-  color: #3fc1c9;
+  color: #a4ebf3;
 }
 h3 {
   font-family: "Zen Dots", cursive;
-  color: #ffc2b4;
+  color: rgb(1, 153, 153);
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #364f6b;
-  color: #f5f5f5;
+  background-color: #aaaaaa;
+  color: #2b2d42;
   margin: 0;
   line-height: 1.5;
 }
 
 a:hover {
-  color: rgb(250, 207, 87);
+  color: #86d4dd;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
 }
 
 /* Header Styles */
@@ -61,14 +66,13 @@ a:hover {
   grid-column: 4 / -1;
   grid-row: 3;
   align-self: flex-start;
-  xbackground-color: hotpink;
 }
 .navbar-items li {
   list-style-type: none;
   display: inline-block;
 }
 .navbar-item {
-  color: orange;
+  color: #08cbe0;
   font-size: 1.2rem;
   padding-right: 3.125rem;
   text-decoration: none;
@@ -92,7 +96,7 @@ a:hover {
 }
 
 .tags-container {
-  background-color: brown;
+  background-color: #525151;
   border-radius: 1.875rem;
   border: 0.125rem solid black;
 }
@@ -107,7 +111,7 @@ a:hover {
 }
 
 .tags li {
-  background-color: coral;
+  background-color: pink;
   padding: 0.313rem;
   margin: 0.313rem;
   border-radius: 1.25rem;
@@ -130,7 +134,7 @@ a:hover {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  background-color: cadetblue;
+  background-color: #747272;
   padding: 1rem;
   border-radius: 10%;
 }
@@ -199,7 +203,7 @@ a:hover {
 .biography-container {
   padding: 0 2em;
   text-align: right;
-  background-color: darkgoldenrod;
+  background-color: cadetblue;
 }
 
 .about-me {
@@ -283,13 +287,13 @@ a:hover {
 /* Footer Style */
 
 footer {
-  background-color: darkgray;
+  background-color: rgb(65, 64, 64);
 }
 
 .footer-nav-container {
   display: flex;
   justify-content: center;
-  background-color: darkgrey;
+  background-color: rgb(54, 54, 54);
 }
 
 .footer-nav-container a {
@@ -299,4 +303,5 @@ footer {
 .footer-nav-item {
   list-style-type: none;
   padding-right: 2rem;
+  color: #f4f4f4;
 }
