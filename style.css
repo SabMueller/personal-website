@@ -98,7 +98,7 @@ a {
 .tags-container {
   background-color: #525151;
   border-radius: 1.875rem;
-  border: 0.125rem solid black;
+  border: 0.125rem solid #353434;
 }
 
 .tags {
@@ -135,6 +135,7 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: #747272;
+  border: 0.125rem solid #5a5858;
   padding: 1rem;
   border-radius: 10%;
 }
